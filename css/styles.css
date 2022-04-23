@@ -1,0 +1,558 @@
+* {
+    box-sizing: border-box;
+    
+    
+}
+body {
+    margin: 0;
+    padding:0;
+    background-color: #F4F9FB;
+    font-family: 'Poppins', sans-serif;
+}
+body,
+html {
+    overflow-x: hidden;
+}
+.header {
+    width:100%;
+    height: 100vh;
+    background-image: url(../images/top.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+nav {
+    display: flex;
+    width:100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav-links ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+.nav-links li {
+    list-style-type: none;
+}
+.nav-links li a {
+    padding: 3rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:#005586;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+}
+.nav-links li a:hover {
+    background-color: rgb(218, 222, 237);
+}
+.logo {
+    padding: 1rem 3rem;
+    width:100%;
+}
+.toggle-button {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 2rem;
+    right:2rem;
+    width:30px;
+    height:20px;
+}
+.toggle-button .bar {
+    background-color: black;
+    width:100%;
+    height:3px;
+    border-radius: 10px;
+}
+.front-design {
+    background-image: url(../images/bottom.png);
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.front-design {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-self: center;
+    
+}
+.front-design img {
+    width:100%;
+    height:22rem;
+}
+.front-design div {
+    z-index: 1;
+    padding:4rem;
+ margin-bottom: 20rem;
+
+ 
+}
+
+.front-design p:first-of-type {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+
+.front-design p:last-of-type {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+.contact-button input {
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+font-size: 1.6rem;
+font-weight: 700;
+padding:0.7rem 2rem;
+color: white;
+border-radius: 13px;
+letter-spacing: 0.15em;
+background-color: rgba(15, 33, 73,0.8);
+color: white;
+width: fit-content;
+
+}
+.contact-button input:hover {
+   background-color: rgb(31, 89, 164);
+}
+/*-----Explore---------*/
+.explore {
+    margin-top:2rem;
+    padding: 0.4rem;
+   }
+   .explore-products {
+       display: flex;
+       gap:3rem;
+      background-color:  #F4F9FB;
+      justify-content:center;
+     
+      
+   }
+   .products-container {
+       display: flex;
+       gap:1rem;
+       background-color:#5277c0;
+       border-radius: 20px;
+       padding: 1rem;
+       margin-top: -6rem;
+       z-index: 1;
+       border: 10px solid rgb(203, 210, 250);
+       width:fit-content;
+       align-items: center;
+   }
+   .products-container p, .sales-container p{
+       line-height: 1.3;
+       font-size: 1.2rem;
+       font-family: 'Poppins', sans-serif;
+     
+   }
+   .products-container img {
+       width:100%;
+   }
+   .sales-container img {
+       width:100%;
+
+   }
+   .sales-container {
+       display: flex;
+       gap:1rem;
+       background-color:#4789af;
+       border-radius: 20px;
+       padding: 1.5rem;
+       z-index: 1;
+       margin-top: -6rem;
+       justify-content:space-between;
+       border: 10px solid rgb(203, 210, 250);
+       width: fit-content;
+       align-items: center;
+   }
+   .products-container h2, .sales-container h2 {
+       letter-spacing: 3px;
+       font-family: 'Poppins', sans-serif;
+       color: rgb(7, 6, 84);
+   }
+   .products-container a, .sales-container a {
+     padding-top: 7rem;
+       color: rgb(19, 19, 251);
+       font-size: 1.4rem;
+       text-decoration: underline;
+       font-weight: 700;
+       font-family: 'Poppins', sans-serif;
+   }
+   .products-container a:hover, 
+   .sales-container a:hover {
+       color: rgb(127, 187, 255);
+   }
+   /*-------------Service----------------*/
+.service {
+    margin-top: 4rem;
+}
+.service h1 {
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 800;
+   font-size: 2rem;
+   color: rgba(0, 85, 134, 1);
+   margin: 6rem 0 3rem;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.service-containers {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    box-shadow: 0 0 70px rgba(231, 227, 227, 0.3);
+    padding:3rem 1.5rem;
+    border-radius: 10px;
+    width:18rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.service-containers h2 {
+    color:  rgba(0, 85, 134, 1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    
+}
+.service-containers img {
+    width:100%;
+    height: 6rem;
+}
+
+.explore-service {
+    margin-top: 20rem;
+    margin: auto;
+  
+}
+.service-containers:hover {
+    box-shadow: 0 0 20px rgb(140, 137, 137);
+}
+.service button {
+    margin: auto;
+    margin-top: 3rem;
+    display: block;
+    background: transparent;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3rem;
+    padding: 0.5rem 2.4rem;
+    border-radius: 15px;
+    border: 3px solid #005586;
+    color:#005586;
+    letter-spacing: 2px;
+}
+.service button:hover {
+    color: white;
+    background-color: #005586;
+}
+
+/*--------------Planning Information Technology-------------------*/
+.pit {
+
+    margin-top:9rem;
+    width:100%;
+    background-color: rgba(0, 85, 134, 1);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  
+    
+}
+.pit-wrap {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.pit-wrap img {
+    width:70%;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.pit-wrap p{
+    text-align: left;
+}
+
+.pit-wrap h1{
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0 0 1rem;
+
+
+}
+
+.pit-wrap h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color:rgb(159, 199, 234);
+  
+}
+.pit-wrap p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+
+.contacto {
+    margin-top: 9rem ;
+}
+.contacto form input, textarea {
+    display: block;
+    margin: auto;
+    width:30rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom:1rem;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #E6E8F5;
+}
+textarea {
+    resize: none;
+}
+
+.contacto h1 {
+    text-align: center;
+    color: #005586;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif; 
+}
+.contacto p {
+    text-align: center;
+margin:-10px 0 30px;
+font-family: 'Poppins', sans-serif;
+font-size: 1.1rem;
+}
+.contacto button {
+    margin: auto;
+    margin-top: 3rem;
+    display: block;
+    background: transparent;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3rem;
+    padding: 0.5rem 10rem;
+    border-radius: 15px;
+    border: 3px solid #005586;
+    color:#005586;
+    letter-spacing: 2px;
+}
+.contacto button:hover {
+    color: white;
+    background-color: #005586;
+}
+.footer {
+    margin: 0;
+    margin-top: 5rem;
+    width:100%;
+    background-color: #1D2245;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap:11rem;
+    align-items: center;
+    padding:4rem;
+}
+
+.footer .footer-container {
+justify-content:center;
+align-items: center;
+padding: 1rem;
+height: 9.4rem;
+text-align: center;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
+.social-media .fa {
+   font-size: 2.3rem;
+    color: white;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------MEDIA QUERIES-----------------*/
+
+@media (max-width:400px)  {
+    .contact-button input {
+        font-size: 1.2rem;
+    }
+    .front-design p {
+        font-size: 1rem;
+     
+    }
+
+    .pit-wrap img {
+        width: 100%;
+     }
+     .pit-wrap h2 {
+         text-align: center;
+         font-size: 1.2rem;
+         font-weight: 700;
+     }
+    .row .service-containers {
+        width:16rem;
+    }
+    .contacto p  {
+        padding: 10px;
+    }
+} 
+@media (max-width:700px) {
+ .front-design div {
+     padding: 10px;
+ }
+.front-design img {
+    height:15rem;
+}
+.contact-button input{
+font-size: 1rem;
+padding:0.7rem 1rem;
+}
+.contacto form input, textarea {
+    width: 20rem;
+}
+.contacto button {
+    padding: 0.5rem 5rem;
+}
+}
+
+@media (max-width:850px) {
+    .front-design p:first-of-type {
+        font-size: 1.3rem;
+    }
+    .front-design p:last-of-type {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .row {
+        flex-direction: column;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        z-index: 3;
+        
+    
+    }
+   
+.bottom-image {
+    height: 40vh;
+}
+    .nav-links {
+        display: none;
+        width:100%;
+
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width:100%;
+    
+     
+    }
+    .nav-links li {
+        text-align: center;
+       
+    }
+    .nav-links li a {
+        padding: 1rem;
+     
+    }
+    .nav-links.active {
+        display: flex;
+        border-top: 0.1px solid rgba(128, 128, 128, 0.5);
+       
+    }
+    .explore-products {
+        flex-direction: column;
+    }
+   .products-container, .sales-container {
+       align-self: center;
+   }
+.products-container{
+    margin-bottom: 32px;
+}
+.service {
+    flex-direction: column;
+}
+}
+
+@media (max-width:1200px) {
+    .footer {
+        flex-direction: column;
+        gap:2rem;
+    }
+    .social-media {
+      gap:3rem;
+      margin: 10px;
+    }
+    
+}
+@media (max-width:1400px) {
+    .pit {
+        flex-direction: column;
+    }
+    .pit-wrap {
+        padding:1rem;
+      
+    }
+   
+    .pit-wrap p {
+       padding: 0 1.2rem;
+    }
+    .pit-wrap img {
+        margin-top: -20px;
+    }
+}
